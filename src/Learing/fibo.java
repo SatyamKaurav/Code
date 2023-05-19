@@ -1,4 +1,4 @@
-package com.learing;
+package Learing;
 
 import java.util.Scanner;
 

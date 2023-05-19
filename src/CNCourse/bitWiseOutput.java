@@ -1,4 +1,5 @@
-import  java.util.Scanner;
+package CNCourse;
+
 public class bitWiseOutput {
     public static void main(String[] args) {
 //        int a=10,b=50;

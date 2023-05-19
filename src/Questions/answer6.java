@@ -1,5 +1,6 @@
+package Questions;
+
 import java.util.Scanner;
-import java.lang.*;
 public class answer6 {
     public static void main(String[] args) {
        // Java Program to find sum of natural numbers using for loop

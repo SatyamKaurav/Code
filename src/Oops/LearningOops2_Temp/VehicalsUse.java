@@ -1,6 +1,5 @@
-package LearningOops2_Temp;
+package Oops.LearningOops2_Temp;
 
-import LearningOops2.Car;
 import LearningOops2.Vehicals;
 
 public class VehicalsUse {

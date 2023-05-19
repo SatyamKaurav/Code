@@ -1,3 +1,5 @@
+package CNCourse;
+
 public class fibonausingfun {
     public static boolean checkMember(int n) {
 

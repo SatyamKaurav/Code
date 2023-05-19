@@ -1,3 +1,5 @@
+package CNCourse;
+
 public class Recusrion2 {
    public static String removeX(String s){
        if (s.length()==0){

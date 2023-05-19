@@ -1,3 +1,5 @@
+package CNCourse;
+
 public class Main {
     public static void main(String[] args) {
         //Lecture 3 solutions

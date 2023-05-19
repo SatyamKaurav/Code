@@ -1,3 +1,5 @@
+package CNCourse;
+
 public class isPrime {
     public static boolean isPrime(int x)
     {

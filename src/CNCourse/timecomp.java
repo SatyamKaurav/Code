@@ -1,3 +1,5 @@
+package CNCourse;
+
 public class timecomp {
   public static   int sumOfDigits(int n){
         int sum;

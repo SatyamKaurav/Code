@@ -1,4 +1,4 @@
-package LearningOops2;
+package Oops.LearningOops2;
 
 public class VehicalsUse {
     public static void main(String[] args) {

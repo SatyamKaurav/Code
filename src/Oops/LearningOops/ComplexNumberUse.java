@@ -1,4 +1,4 @@
-package LearningOops;
+package Oops.LearningOops;
 import java.util.Scanner;
 public class ComplexNumberUse {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package LearningOops2;
+package Oops.LearningOops2;
 
 public class Bicycle extends Vehicals {
     public void print() {

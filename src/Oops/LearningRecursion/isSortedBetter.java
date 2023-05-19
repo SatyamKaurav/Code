@@ -1,4 +1,4 @@
-package LearningRecursion;
+package Oops.LearningRecursion;
 
 public class isSortedBetter {
     public static boolean isShortedBetter(int[] a,int n){

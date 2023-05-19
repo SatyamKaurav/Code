@@ -1,3 +1,5 @@
+package CNCourse;
+
 import java.util.Arrays;
 
 public class arrayinsertion {

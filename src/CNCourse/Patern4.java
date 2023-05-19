@@ -1,4 +1,6 @@
-import  java.util.Scanner;
+package CNCourse;
+
+import java.util.Scanner;
 public class Patern4 {
     public static void main(String[] args) {
 

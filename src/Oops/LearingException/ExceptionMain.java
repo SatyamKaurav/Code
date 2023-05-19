@@ -1,4 +1,4 @@
-package LearingException;
+package Oops.LearingException;
 
 public class ExceptionMain{
     public static int divide(int a,int b) throws DivideByZeroException{

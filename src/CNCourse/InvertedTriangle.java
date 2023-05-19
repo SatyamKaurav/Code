@@ -1,3 +1,5 @@
+package CNCourse;
+
 import java.util.Scanner;
 
 public class InvertedTriangle {

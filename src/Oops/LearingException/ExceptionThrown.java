@@ -1,4 +1,4 @@
-package LearingException;
+package Oops.LearingException;
 
 public class ExceptionThrown {
     static int divideByZero(int a, int b){

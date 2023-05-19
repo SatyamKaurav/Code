@@ -1,4 +1,4 @@
-package LearningRecursion;
+package Oops.LearningRecursion;
 
 public class PowerCalculation {
     public static long power(long x, long n){

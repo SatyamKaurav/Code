@@ -1,3 +1,5 @@
+package Questions;
+
 import java.util.Scanner;
 public class answer7 {
     public static void main(String[] args) {

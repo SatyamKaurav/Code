@@ -1,3 +1,5 @@
+package CNCourse;
+
 import java.util.Scanner;
 public class funt {
     public static void printFahrenheitTable(int start, int end, int step) {

@@ -1,4 +1,4 @@
-package LearningOops;
+package Oops.LearningOops;
 
 public class FractionUse {
     public static void main(String[] args) {

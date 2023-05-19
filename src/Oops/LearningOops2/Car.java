@@ -1,4 +1,4 @@
-package LearningOops2;
+package Oops.LearningOops2;
 
 public class Car extends Vehicals {
     int numberOfDors;

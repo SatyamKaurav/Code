@@ -1,4 +1,4 @@
-package com.learing;
+package Learing;
 
 public class countnums {
     public static void main(String[] args) {

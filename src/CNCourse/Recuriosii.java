@@ -1,3 +1,5 @@
+package CNCourse;
+
 public class Recuriosii {
     public static int BinarySearch(int a[],int si,int ei,int x){
         if(si>ei){
