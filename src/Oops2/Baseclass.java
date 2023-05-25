@@ -7,6 +7,8 @@ public class Baseclass {
 
 
     Baseclass() {
+         super();
+
         this.h = -1;
         this.l = -1;
         this.w = -1;
