@@ -1,4 +1,4 @@
-package LearingOOPs;
+package LearingOOPs.Inhertance;
 
 public class Vehicale {
    int modelNo;

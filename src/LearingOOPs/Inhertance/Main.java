@@ -1,4 +1,4 @@
-package LearingOOPs;
+package LearingOOPs.Inhertance;
 
 public class Main {
     public static void main(String[] args) {

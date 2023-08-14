@@ -1,4 +1,4 @@
-package LearingOOPs;
+package LearingOOPs.Inhertance;
 
 public class Car extends Vehicale {
   int noOfSeats;
