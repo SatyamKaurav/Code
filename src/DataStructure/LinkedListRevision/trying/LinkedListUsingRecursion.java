@@ -72,13 +72,14 @@ public class LinkedListUsingRecursion {
     }
 //*************************************************************************
     public static Node reverseR(Node head) {
+        //Reverse LINKED LIST IDEA 3
 
         if (head == null || head.next == null) {
             return head;
         }
         Node newhead = reverseR(head.next);
-        Node nexthead = head.next;
-        nexthead.next = head;
+        Node tail= head.next;
+        tail.next = head;
         head.next = null;
         return newhead;
 
@@ -89,6 +90,7 @@ public class LinkedListUsingRecursion {
 
 //*************************************************************************
     public static Node reverseLLR(Node head) {
+        //Reverse LINKED LIST IDEA 1
         // *The time complexity of this method will be O(n^2)*
 
 
@@ -121,6 +123,7 @@ public class LinkedListUsingRecursion {
 
 
     public static DoubleNode reverseLLRBetter(Node head){
+        //Reverse LINKED LIST IDEA 2
         DoubleNode ans;
         if (head == null || head.next == null) {
             ans=new DoubleNode();
@@ -138,6 +141,16 @@ public class LinkedListUsingRecursion {
         return ans;
 
     }
+    public static Node reverseLLRBetter1(Node head){
+//        This funtion is used to hind the compelxity if the code
+//        we don't want that user get to know to about
+//        the DoubleNode
+
+        DoubleNode ans=reverseLLRBetter(head);
+        return ans.head;
+    }
+
+
     public static void main(String[] args) {
         Node head = InputLL();
 //        Node newNode = insertR(head, 20, 10);
@@ -145,8 +158,9 @@ public class LinkedListUsingRecursion {
 //        printR(head);
 //        printR(newNode);
 //        head = reverseLLR(head);
-       DoubleNode ans=reverseLLRBetter(head);
-        printR(ans.head);
+            head=reverseLLRBetter1(head);
+            printR(head);
+
 
 
     }
