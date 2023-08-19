@@ -1,7 +1,7 @@
 package DataStructure.LinkedListRevision.trying;
 
 import java.util.Scanner;
-
+//This is edit from GitHub 
 public class LLuse {
 
     public static Node InputLL() {
