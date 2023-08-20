@@ -92,11 +92,25 @@ public class LinkedListMid {
 
     public static void main(String[] args) {
         Node head=InputLL();
-        Node midPoint=mid(head);
-        System.out.println(midPoint.data);
-
+//        Node midPoint=mid(head);
+//        System.out.println(midPoint.data);
+           findNodeRec(head,5);
     }
 
+public static void findNodeRec(Node head,int val){
 
+        int count=0;
+        Node temp=head;
+        while (temp != null){
+            if (temp.data == val){
+                System.out.println(count);
+            }
+            count++;
+            temp=temp.next;
+        }
+
+
+
+}
 
 }
