@@ -41,3 +41,5 @@ ii) Insertion at the end of the linked list
 iii) Deletion of the last node of the linked list
 iv) Deletion of the front node of the linked list
 ###### Answer:- All of the above 
+
+[embed] https://drive.google.com/file/d/1DaTrcjKuVXSbsIeZ0Z8BYvnxmYbN2WVY/view?usp=sharing [/embed]
