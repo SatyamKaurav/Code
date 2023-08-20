@@ -40,4 +40,4 @@ i) Insertion at the front of the linked list
 ii) Insertion at the end of the linked list
 iii) Deletion of the last node of the linked list
 iv) Deletion of the front node of the linked list
-###### Answer:- is All of the above 
+###### Answer:- All of the above 
