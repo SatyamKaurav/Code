@@ -124,3 +124,70 @@ O(1) for insertion and O(n) for deletion<br>
 *** O(1) for insertion and O(1) for deletion***<br>
 O(n) for insertion and O(n) for deletion<br>
 O(n) for insertion and O(1) for deletion<br>
+
+###### Predict the output
+ 
+Consider the following pseudo-code that uses a Stack:<br>
+declare a stack of characters<br>
+while ( there are more characters in the word to read )<br>
+{<br>
+read a character<br>
+push the character on the stack<br>
+}<br>
+while ( the stack is not empty )<br>
+{<br>
+pop a character off the stack<br>
+write the character to the screen<br>
+}<br>
+What will be the output for "codingninjas"?<br>
+
+Answer: sajningnidoc
+
+###### Predict the output
+ 
+What would be the output of the following code?<br>
+import java.util.Stack;<br>
+class Test {<br>
+public static void main (String[] args) {<br>
+Stack<Integer> stack=new Stack<Integer>();<br>
+stack.push(5);<br>
+stack.push(10);<br>
+stack.push(15);<br>
+System.out.print(stack.pop()+stack.size());<br>
+}<br>
+}<br>
+
+Answer: 17
+
+###### Predict the output
+ 
+What would be the output of the following code?<br>
+import java.util.Stack;<br>
+class Test {<br>
+public static void main (String[] args) {<br>
+Stack<Integer> stack=new Stack<Integer>();<br>
+for(int i=0;i<10;i++)<br><br>
+{<br>
+stack.push(i*2);<br>
+}<br>
+System.out.print(stack.peek());<br>
+}<br>
+}<br>
+Answer: 18
+
+###### Predict the output
+ 
+What would be the output of the following code?<br>
+import java.util.Stack;<br>
+class Test {<br>
+public static void main (String[] args) {<br>
+Stack<Integer> stack=new Stack<Integer>();<br>
+while(stack.isEmpty())<br>
+{<br>
+stack.push(10);<br>
+}<br>
+System.out.print(stack.pop()+" "+stack.size());<br>
+}<br>
+}<br>
+ 
+Answer: 10 0 
