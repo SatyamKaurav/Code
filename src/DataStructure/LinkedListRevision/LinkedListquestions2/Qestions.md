@@ -1,4 +1,4 @@
-##### Qestion 1:Find a Node in LL (recursive)
+###### Qestion 1:Find a Node in LL (recursive)
  
 Given a singly linked list of integers and an integer n, find and return the index for the first occurrence of 'n' in the linked list. -1 otherwise.<br>
 Follow a recursive approach to solve this.<br>
@@ -37,7 +37,7 @@ Sample Input 2 :<br>
 Sample Output 2 :<br>
 1<br>
 5
-##### Question 2:Even after Odd Linked List
+###### Question 2:Even after Odd Linked List
 For a given singly linked list of integers, arrange the elements such that all the even numbers are placed after the odd numbers. The relative order of the odd and even terms should remain unchanged.<br>
 Note :<br>
 No need to print the list, it has already been taken care. Only return the new head to the list.<br>
@@ -70,7 +70,7 @@ Sample Output 2 :<br>
 1 11 3 9 6 8 0<br>
 10 20 30 40<br>
 
-##### Question 3 : Delete every N nodes
+###### Question 3 : Delete every N nodes
  
 You have been given a singly linked list of integers along with two integers, 'M,' and 'N.' Traverse the linked list such that you retain the 'M' nodes, then delete the next 'N' nodes. Continue the same until the end of the linked list.<br>
 To put it in other words, in the given linked list, you need to delete N nodes after every M nodes.<br>
@@ -115,7 +115,7 @@ For the first query, we delete one node after every zero elements hence removing
 
 For the second query, we delete three nodes after every two nodes, resulting in the final list,<br> 1 -> 2 -> 6 -> 7.
 
-##### Question 4 : Swap Two Nodes of Linked List
+###### Question 4 : Swap Two Nodes of Linked List
  
 You have been given a singly linked list of integers along with two integers, 'i,' and 'j.' Swap the nodes that are present at the 'i-th' and 'j-th' positions.<br>
 Note :<br>
@@ -158,7 +158,7 @@ Sample Output 2 :<br>
 10 30 20 40<br>
 90 80 90 25 65 85 70 <br>
 
-##### Qestion 5:kReverse
+###### Qestion 5:kReverse
  
 Given a singly linked list of integers, reverse the nodes of the linked list 'k' at a time and return its modified list.
 'k' is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of 'k,' then left-out nodes, in the end, should be reversed as well.
@@ -205,7 +205,7 @@ Sample Output 2 :<br>
 1 2 3 4 5<br>
 40 30 20 10 <br>
 
-##### Question 6 Bubble Sort (Iterative) Linked List
+###### Question 6 Bubble Sort (Iterative) Linked List
 
 Given a singly linked list of integers, sort it using 'Bubble Sort.'<br>
 Note :
