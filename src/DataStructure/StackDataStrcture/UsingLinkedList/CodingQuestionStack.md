@@ -86,7 +86,7 @@ The third one is Query-1: It pushes the specified data 10 into the stack and sin
 The fourth one is Query-5: It tells whether the stack is empty at this point or not. Since the stack has one element and hence it is not empty, false is printed.
 
 ## Answer
-```java```
+```java```  
 /*
 Following is the structure of the node class for a Singly Linked List
 

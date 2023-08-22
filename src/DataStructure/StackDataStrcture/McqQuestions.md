@@ -121,6 +121,6 @@ What would be the time complexity of the push and pop operations of the stack im
 Answer:<br>
 This problem has only one correct answer<br>
 O(1) for insertion and O(n) for deletion<br>
-***O(1) for insertion and O(1) for deletion***<br>
+*** O(1) for insertion and O(1) for deletion***<br>
 O(n) for insertion and O(n) for deletion<br>
 O(n) for insertion and O(1) for deletion<br>
