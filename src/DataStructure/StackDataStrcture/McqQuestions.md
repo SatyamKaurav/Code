@@ -97,3 +97,30 @@ This problem has only one correct answer<br>
 2 3 8 2 1<br>
 [*]3 3 8 2 1<br>
 4 8 3 2 1<br>
+
+###### Double Stack
+ 
+If initially the size of array of stack is 3,and we need to input 34 elements. How many times the doublecapacity function would be called?<br>
+Answer: the doubleCapcity funtion will be called 4 times
+
+###### Time complexity
+What is the time complexity of doublecapacity function of stack?
+***(n is the size of previous array).***
+Answer: the complexity will be O(n)
+
+###### LL Stacks
+Which of the following is true about linked list implementation of stack?<br>
+(A) In push operation, if new nodes are inserted at the beginning of linked list, then in pop operation, nodes must be removed from end.<br>
+(B) In push operation, if new nodes are inserted at the end, then in pop operation, nodes must be removed from the beginning.<br>
+Answer: None of the above
+
+###### Time complexity
+ 
+What would be the time complexity of the push and pop operations of the stack implemented using linked list (Assuming stack is implemented efficiently)?<br>
+
+Answer:<br>
+This problem has only one correct answer<br>
+O(1) for insertion and O(n) for deletion<br>
+***O(1) for insertion and O(1) for deletion***<br>
+O(n) for insertion and O(n) for deletion<br>
+O(n) for insertion and O(1) for deletion<br>

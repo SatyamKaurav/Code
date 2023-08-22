@@ -1,4 +1,4 @@
-package DataStructure.StackDataStrcture;
+package DataStructure.StackDataStrcture.UsingArray;
 
 public class StackUsingArray {
 
@@ -7,7 +7,7 @@ public class StackUsingArray {
 
 
     public StackUsingArray() {
-        data = new int[15];
+        data = new int[3];
         topIndex = -1;
     }
 
@@ -24,20 +24,32 @@ public class StackUsingArray {
 
 
     // insert element
-    public void push(int element) throws StackFullException {
+    public void push(int element) /*throws StackFullException */{
 
 //      if the Stack is full, it will trow the StackFullException error
         if (topIndex == data.length - 1) {
-            StackFullException e = new StackFullException();
-            throw e;
+//            StackFullException e = new StackFullException();
+//            throw e;
 
 //            or
 //                    throw new StackFullException();
+
+            doubleCapcity();
         }
         data[++topIndex] = element;
 
     }
 
+    private void doubleCapcity(){
+        System.out.println("doubleCapacity");
+        int temp[]=data;
+        data=new int[2 * temp.length];
+
+        for (int i=1;i<temp.length;i++){
+            data[i]=temp[i];
+        }
+
+    }
 
     public boolean isEmpty() {
 //        Or

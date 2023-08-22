@@ -1,4 +1,4 @@
-package DataStructure.StackDataStrcture;
+package DataStructure.StackDataStrcture.UsingArray;
 
 public class StackEmptyException extends Exception {
 
