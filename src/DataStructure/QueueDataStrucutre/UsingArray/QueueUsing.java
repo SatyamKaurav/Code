@@ -13,24 +13,54 @@ public class QueueUsing {
 //
 //    }
 
+    //    public static void main(String[] args) {
+//        QueueUsingArray queue=new QueueUsingArray();
+//        int arr[]={10,20,30};
+//        for (int x:arr){
+//                try {
+//                    queue.enqueue(x);
+//                } catch (QueueFullException e) {
+//
+//                }
+//        }
+//        while (!queue.isEmpty()){
+//            try {
+//                System.out.println(queue.dequeue());
+//            } catch (QueueEmptyException e) {
+//
+//            }
+//        }
+//
+//    }
     public static void main(String[] args) {
-        QueueUsingArray queue=new QueueUsingArray();
-        int arr[]={10,20,30};
-        for (int x:arr){
-                try {
-                    queue.enqueue(x);
-                } catch (QueueFullException e) {
+        DyanmicQueueUsingArray queue = new DyanmicQueueUsingArray();
+//    int arr[]={10,20,30};
+//        for (int x:arr){
+//
+//                    queue.enqueue(x);
+//
+//        }
+//        while (!queue.isEmpty()){
+//            try {
+//                System.out.println(queue.dequeue());
+//            } catch (QueueEmptyException e) {
+//
+//            }
+//}
 
-                }
-        }
-        while (!queue.isEmpty()){
+
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(50);
+        queue.enqueue(60);
+        while (!queue.isEmpty()) {
             try {
                 System.out.println(queue.dequeue());
             } catch (QueueEmptyException e) {
 
             }
+
         }
-
     }
-
 }
