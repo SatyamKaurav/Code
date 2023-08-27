@@ -3,11 +3,11 @@ package DataStructure.QueueDataStrucutre.UsingArray;
 public class QueueUsingArray {
 
      /*
-     ● enqueue(): Insertion of element
-     ● dequeue(): Deletion of element
-     ● front(): returns the element present in the front position
-     ● getSize(): returns the total number of elements present at current stage
-     ● isEmpty(): returns boolean value, TRUE for empty and FALSE for non-empty
+     ● enqueue(): Insertion of element [Time Complexity O(1)]
+     ● dequeue(): Deletion of element [Time Complexity O(1)]
+     ● front(): returns the element present in the front position [Time Complexity O(1)]
+     ● getSize(): returns the total number of elements present at current stage [Time Complexity O(1)]
+     ● isEmpty(): returns boolean value, TRUE for empty and FALSE for non-empty [Time Complexity O(1)]
       */
 
     private int data[];
