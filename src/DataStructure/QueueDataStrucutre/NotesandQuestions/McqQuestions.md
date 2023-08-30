@@ -1,0 +1,206 @@
+# Correct Order
+
+If the elements “p”, “q”, “r” and “s” are placed in a queue and are deleted one at a time, in what order will they be removed?
+
+Options
+This problem has only one correct answer
+1. [ ] srqp
+2. [x] pqrs
+3. [ ] srpq
+4. [ ] qrsp
+
+Solution Description<br>
+Since queue follow First In First Out order, so whatever element will be inserted first, that will be deleted first. So the output for the above code is "pqrs".
+
+#Function
+Send Feedback
+Consider the following pseudo code. Assume that IntQueue is an integer queue. What does the function fun do?
+```
+        void fun(int n)
+        {
+        IntQueue q = new IntQueue();
+        q.enqueue(0);
+        q.enqueue(1);
+        for (int i = 0; i < n; i++)
+        {
+        int a = q.dequeue();
+        int b = q.dequeue();
+        q.enqueue(b);
+        q.enqueue(a + b);
+        System.out.print(a);
+        }
+        }
+```
+Options
+This problem has only one correct answer
+1. [ ] Print numbers 0 to n-1
+2. [ ] Print numbers n-1 to 0
+3. [x] Print first n fibonacci numbers
+4. [ ] Print first n fibonacci numbers in reverse
+
+#Queue Implementation
+
+Suppose you are given an implementation of a queue of integers. The operations that can be performed on the queue are:
+```
+i. isEmpty (Q) — returns true if the queue is empty, false otherwise.
+
+ii. delete (Q) — deletes the element at the front of the queue and returns its value.
+
+iii. insert (Q, i) — inserts the integer i at the rear of the queue.
+
+```
+Consider the following function:
+```
+void f (queue Q) {
+int i ;
+if (!isEmpty(Q)) {
+i = delete(Q);
+f(Q);
+insert(Q, i);
+}
+} 
+```
+
+Options
+This problem has only one correct answer
+1. [ ] Leaves the queue Q unchanged
+2. [x] Reverses the order of the elements in the queue Q
+3. [ ] Deletes the element at the front of the queue Q and inserts it at the rear keeping the other elements in the same order
+4. [ ] Empties the queue Q.
+
+Solution Description<br>
+As it is recursive call, and removing from front while inserting from end, that means last element will be deleted at last and will be inserted 1st in the new queue. And like that it will continue till first call executes insert(Q,i) function.
+So, the queue will be in reverse.
+
+# Insert Element
+
+In optimized linked list implementation of a queue, where does a new element be inserted?
+
+Options
+This problem has only one correct answer
+1. [ ] At the head of linked list
+2. [x] At the tail of the linked list
+3. [ ] At the centre position in the linked list
+4. [ ] None
+
+#Size of Circular Queue
+
+If we have not maintained size variable in the circular queue(implemented using arrays) then how can we calculate the size of the queue.
+```
+front: index of the front element.
+rear: index of the last element.
+
+a) size = rear - front +1
+b) size = size of array - (front - rear) + 1
+```
+**Note: Please ignore the case when front and rear are equal to each other.**
+
+Options
+This problem has only one correct answer
+1. [ ] a)
+2. [ ] b)
+3. [x] a) when rear is greater than front and b) when front is greater than rear.
+4. [ ] none
+
+# Time complexity
+ 
+What is the time complexity of performing doublecapacity function in case of queues?
+Options
+This problem has only one correct answer
+1. [x] O(n)
+2. [ ] O(1)
+3. [ ] O(log(n))
+4. [ ] O(n^2)
+
+#Stack and Queue
+
+The seven elements A, B, C, D, E, F and G are pushed onto a stack in reverse order, i.e., starting from G. The stack is popped four times and each element is inserted into a queue.Three elements are deleted from the queue and pushed back onto the stack. Now, two element are popped from the stack. Which element is at the top of the Stack ?
+Options
+This problem has only one correct answer
+1. [x] A
+2. [ ] C
+3. [ ] D
+4. [ ] B
+
+# Worst case operation
+
+In linked list implementation of queue, if only front pointer is maintained, which of the following operation take worst case time (i.e. O(n) )?
+Options
+This problem has only one correct answer
+1. [x] Insertion from rear
+2. [ ] Deletion from front
+3. [ ] Both
+4. [ ] None
+
+# LL Queue
+
+Which of the following is true about linked list implementation of queue?
+
+(A) In enqueue operation, if new nodes are inserted at the beginning of linked list, then in pop operation, nodes must be removed from end.
+(B) In enqueue operation, if new nodes are inserted at the end, then in pop operation, nodes must be removed from the beginning.
+
+Options
+This problem has only one correct answer
+1. [ ] a)
+2. [ ] b)
+3. [x] Both a) and b)
+4. [ ] none
+5. [ ] 
+Solution Description
+To keep the First In First Out order, a queue can be implemented using linked list in any of the given two ways.
+
+# Insert in queue
+
+In linked list implementation of a queue, front and rear pointers are tracked. Which of these pointers will change during an insertion into EMPTY queue?
+
+Options
+This problem has only one correct answer
+1. [ ] Only front pointer
+2. [ ] Only rear pointer
+3. [x] Both front and rear pointer
+4. [ ] None
+
+#Predict the output
+
+What would be the output of the following code?
+```
+import java.util.LinkedList;
+import java.util.Queue;
+class Test {
+public static void main (String[] args) {
+Queue<Integer> q=new LinkedList<Integer>();
+for(int i=1;i<5;i++)
+{
+q.add(10+i);
+}
+System.out.print(q.poll()+" "+q.size());
+}
+}
+```
+Answer 11 3
+
+# Predict the output
+
+What would be the output of the following code?
+```
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+class Test {
+public static void main (String[] args) {
+Queue<Integer> q=new LinkedList<Integer>();
+Stack<Integer> s=new Stack<Integer>();
+q.add(5);
+q.add(10);
+s.push(10);
+s.push(20);
+System.out.print(q.peek()+s.pop());
+}
+}
+```
+Answer : 25 
+
+# Queue to Stack
+ 
+What are the minimum number of queues required to make a Stack?<br>
+Answer: 2 
