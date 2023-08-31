@@ -33,6 +33,10 @@ public class BinaryTreeUse {
         return root;
     }
 
+
+//***************************************************************************************
+
+
     public static BinaryTreeNode<Integer> takeTreeInput() {
         System.out.print("Inter the Root Node :");
         Scanner s = new Scanner(System.in);
@@ -53,6 +57,10 @@ public class BinaryTreeUse {
         return root;
     }
 
+
+//***************************************************************************************
+
+
     public static void printTreeDetailed(BinaryTreeNode<Integer> root) {
         if (root == null) {
             return;
@@ -71,6 +79,10 @@ public class BinaryTreeUse {
         printTreeDetailed(root.left);
         printTreeDetailed(root.right);
     }
+
+
+//***************************************************************************************
+
 
     public static void printTree(BinaryTreeNode<Integer> root) {
         //TODO Take care of base case
@@ -95,86 +107,116 @@ public class BinaryTreeUse {
 
 
     }
-    public static int numNodes(BinaryTreeNode<Integer> root){
-        if (root==null){
+
+
+//***************************************************************************************
+
+
+    public static int numNodes(BinaryTreeNode<Integer> root) {
+        if (root == null) {
             return 0;
         }
 
-        int leftCount=numNodes(root.left);
-        int rightCount=numNodes(root.right);
+        int leftCount = numNodes(root.left);
+        int rightCount = numNodes(root.right);
 
-        return leftCount+rightCount+1;
-
-
-    }
-    public static int sumNodes(BinaryTreeNode<Integer> root){
-        if (root==null){
-            return 0;
-        }
-
-        int leftSum=sumNodes(root.left);
-        int rightSum=sumNodes(root.right);
-
-        return leftSum+rightSum+root.data;
+        return leftCount + rightCount + 1;
 
 
     }
 
-    public static int largest(BinaryTreeNode<Integer> root){
-        if (root == null){
+
+//***************************************************************************************
+
+
+    public static int sumNodes(BinaryTreeNode<Integer> root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int leftSum = sumNodes(root.left);
+        int rightSum = sumNodes(root.right);
+
+        return leftSum + rightSum + root.data;
+
+
+    }
+
+
+//***************************************************************************************
+
+
+    public static int largest(BinaryTreeNode<Integer> root) {
+        if (root == null) {
             return -1;
         }
 
-        int leftLargest=largest(root.left);
-        int rightLargest=largest(root.right);
-        return Math.max(root.data,Math.max(leftLargest,rightLargest));
+        int leftLargest = largest(root.left);
+        int rightLargest = largest(root.right);
+        return Math.max(root.data, Math.max(leftLargest, rightLargest));
 
 
     }
 
-    public static int height(BinaryTreeNode<Integer> root){
-        if (root ==null){
+
+//***************************************************************************************
+
+
+    public static int height(BinaryTreeNode<Integer> root) {
+        if (root == null) {
             return 0;
         }
 
-        int leftHeight=height(root.left);
-        int rightHeight=height(root.right);
+        int leftHeight = height(root.left);
+        int rightHeight = height(root.right);
 
-        return 1+Math.max(leftHeight,rightHeight);
+        return 1 + Math.max(leftHeight, rightHeight);
 
     }
 
-    public static int leafNodes(BinaryTreeNode<Integer> root){
 
-        if (root == null){
+//***************************************************************************************
 
-            return 0 ;
+
+    public static int leafNodes(BinaryTreeNode<Integer> root) {
+
+        if (root == null) {
+
+            return 0;
         }
 
-        if (root.left == null &&  root.right == null){
+        if (root.left == null && root.right == null) {
             return 1;
         }
 
-       return leafNodes(root.left)+leafNodes(root.right);
-
+        return leafNodes(root.left) + leafNodes(root.right);
 
 
     }
 
-    public  static void printAtDeptK(BinaryTreeNode<Integer> root , int k){
-        if (root==null){
+
+//***************************************************************************************
+
+
+    public static void printAtDeptK(BinaryTreeNode<Integer> root, int k) {
+        if (root == null) {
             return;
         }
 
-        if (k== 0){
-            System.out.print(root.data+"");
+        if (k == 0) {
+            System.out.print(root.data + "");
             return;
         }
 
-        printAtDeptK(root.left,k-1);
-        printAtDeptK(root.right,k-1);
+        printAtDeptK(root.left, k - 1);
+        printAtDeptK(root.right, k - 1);
 
     }
+
+
+//***************************************************************************************
+
+
     public static int countNodesGreaterThanX(BinaryTreeNode<Integer> root, int x) {
         //Your code goes here
         if (root == null) {
@@ -188,23 +230,90 @@ public class BinaryTreeUse {
             return smallOutput;
         }
     }
+
+
+//***************************************************************************************
+
+
+    public static boolean isBalanced(BinaryTreeNode<Integer> root) {
+        if (root == null) {
+            return true;
+        }
+
+        int leftHeight = height(root.left);
+        int rightHeight = height(root.right);
+
+        if (Math.abs(leftHeight - rightHeight) > 1) {
+            return false;
+        }
+
+        boolean isLeftBalanced = isBalanced(root.left);
+        boolean isRightBalanced = isBalanced(root.right);
+
+        return isLeftBalanced && isRightBalanced;
+    }
+
+
+//***************************************************************************************
+
+
+    public static BinaryTreeNode<Integer> removeLeaves(BinaryTreeNode<Integer> root) {
+        if (root == null) {
+            return null;
+        }
+
+        if (root.left == null && root.right == null) {
+            return null;
+        }
+        /*
+        removeLeaves(root.left);
+        removeLeaves(root.right);
+        This will not give us the output we want it will return null to the root but not change the
+        root.....
+
+         */
+
+        /*
+        WHAT SHOULD HAPPEN
+
+        I am calling subtrees and saying remove leaves and these subtrees giving a new root
+        which might be the same root as old one, or it might be a new root…
+        I think I need to update new values in this root node..
+
+        CODE SHOULD LOOK LIKE |
+
+         */
+        root.left = removeLeaves(root.left);
+        root.right = removeLeaves(root.right);
+        return root;
+
+
+    }
+
+
+//***************************************************************************************
+
+
     public static void main(String[] args) {
-        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
-        BinaryTreeNode<Integer> rootLeft = new BinaryTreeNode<>(2);
-        BinaryTreeNode<Integer> rootRight = new BinaryTreeNode<>(3);
-        BinaryTreeNode<Integer> rlRightChild = new BinaryTreeNode<>(4);
-        BinaryTreeNode<Integer> rrLeftChild = new BinaryTreeNode<>(5);
-        root.left = rootLeft;
-        root.right = rootRight;
-        rootLeft.right = rlRightChild;
-        rootRight.left = rrLeftChild;
-        System.out.println("Number of Nodes "+numNodes(root));
-        System.out.println("Sum of Nodes "+sumNodes(root));
-        System.out.println("Largest Node "+largest(root));
-        System.out.println("Height of tree " + height(root));
-        System.out.println("Number of leaf Nodes "+ leafNodes(root));
-        printAtDeptK(root,2);
-        System.out.println(" "+countNodesGreaterThanX( root,2)+" ");
+//        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1);
+//        BinaryTreeNode<Integer> rootLeft = new BinaryTreeNode<>(2);
+//        BinaryTreeNode<Integer> rootRight = new BinaryTreeNode<>(3);
+//        BinaryTreeNode<Integer> rlRightChild = new BinaryTreeNode<>(4);
+//        BinaryTreeNode<Integer> rrLeftChild = new BinaryTreeNode<>(5);
+//        root.left = rootLeft;
+//        root.right = rootRight;
+//        rootLeft.right = rlRightChild;
+//        rootRight.left = rrLeftChild;
+//        System.out.println("Number of Nodes " + numNodes(root));
+//        System.out.println("Sum of Nodes " + sumNodes(root));
+//        System.out.println("Largest Node " + largest(root));
+//        System.out.println("Height of tree " + height(root));
+//        System.out.println("Number of leaf Nodes " + leafNodes(root));
+//        printAtDeptK(root, 2);
+//        System.out.println(" " + countNodesGreaterThanX(root, 2) + " ");
+//        BinaryTreeNode<Integer> roots = removeLeaves(root);
+//        printTreeDetailed(roots);
+
 
 //        printTree(root);
 //        printTreeDetailed(root);
@@ -220,7 +329,8 @@ public class BinaryTreeUse {
 
 
 //        BinaryTreeNode<Integer> root = takeTreeInput();
-//        BinaryTreeNode<Integer> root = takeTreeInputBetter(true, 0, true);
+        BinaryTreeNode<Integer> root = takeTreeInputBetter(true, 0, true);
+        System.out.println(isBalanced(root));
 //        printTreeDetailed(root);
 
 
